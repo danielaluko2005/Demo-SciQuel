@@ -1,0 +1,172 @@
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.Top-Header {
+    font-size: xx-large;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.left {
+    position: absolute;
+    top: 10;
+    bottom: 0;
+    width: 50%;
+    min-height: 20px;
+    /* background-color: #8f9ce2; */
+    /* display: flex; */
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    z-index: 2;
+}
+
+.bg-l-blue {
+    background-color: #8f9ce2;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.color-ash {
+    color: #b9b7b7;
+}
+
+.right {
+    width: 80%;
+    min-height: 350px;
+    min-width: 650px;
+    background: url(https://www.sciquel.org/bobtail.png) no-repeat center / cover;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.header .image {
+    width: 60%;
+}
+
+
+.cards .card {
+    display: block;
+}
+
+.card {
+    border: 2px solid #ebebf3;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f8fcfd;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.left,
+.right {
+    transition: all 0.9s;
+}
+
+.left:hover+.right,
+.left:hover {
+    transform: scale(1.05);
+}
+
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.bg-orange {
+    background-color: orangered;
+    border-radius: 4rem;
+    padding: 2%;
+}
+
+.bg-ash {
+    background-color: #bbb8b8;
+    border-radius: 4rem;
+    padding: 2%;
+}
+
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+body {
+    font-family: 'CustomFont', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.author-card {
+    color: #bbb8b8;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+@media (min-width: 900px) {
+    .cards {
+        display: flex;
+        flex: 1;
+    }
+
+    .left {
+        margin-right: -180px;
+        position: relative;
+        z-index: 2;
+        flex-flow: row;
+    }
+
+    .right {
+        position: relative;
+        z-index: 1;
+    }
+
+
+}
